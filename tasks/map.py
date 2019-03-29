@@ -10,7 +10,7 @@ for i in range(5):
 
 
 
-'''#diffbetweenfilter,reduce and map
+#diffbetweenfilter,reduce and map
 def m(x): return x % 2 == 0
 def f(y): return y * 2
 def r(x,y): return x+y
@@ -22,4 +22,4 @@ print(flist)
 mlist = map(m, list)
 print(mlist)
 
-print(reduce(r,list))'''
+print(reduce(r,list))
