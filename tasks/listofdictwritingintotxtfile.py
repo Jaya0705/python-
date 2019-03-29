@@ -1,12 +1,14 @@
-'''li=[{'Name': 'John Doe', 'Age': 26, 'ID': '1279abc'}]
+li=[{'Name': 'John Doe', 'Age': 26, 'ID': '1279abc'}]
 for dic in li:
    print dic
    with open('listofdictintofile.txt','w') as f:
        for keys,values in dic.items():
            print keys,' ',values
-           f.write('{}:{}''\t'.format(keys,values))'''
+           f.write('{}:{}''\t'.format(keys,values))
 
 
+            
+            
 import xlwt 
 from xlwt import Workbook 
 wb = Workbook()  
