@@ -1,4 +1,4 @@
-'''keys = []
+keys = []
 values = []
 di={}
 c = int(input("Input total no. of elements in the lists:"))
@@ -22,7 +22,7 @@ print(dic)
 
 
 
-li=['n2','n1','n3','n1','n2']'''
+li=['n2','n1','n3','n1','n2']
 
 
 #exception handling
