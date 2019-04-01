@@ -15,6 +15,8 @@ print li
 
 
 
+
+
 #converting list into dict:
 t=[("a", 10),("g", 12),("j",14),("s",20),("k",25),("h",30)]
 di={}
@@ -25,9 +27,15 @@ print di
 
 
 
+
+
+
 l = ['a','b','c','d','e','']
 d = dict([(k, v) for k,v in zip (l[::2], l[1::2])])
 print d
+
+
+
 
 
 
@@ -37,6 +45,9 @@ l=[a for a in li if a%2!=0]
 print l
 
 
+
+
+
 l1=[]
 for a in li:
    if a%2!=0:
@@ -44,10 +55,18 @@ for a in li:
 print l1
 
 
+
+
+
+
 li=[]
 for i in range(20):
    li.append(i*2)
 print li
+
+
+
+
 
 
 li=[i*2 for i in range(20) if i%2!=0]
@@ -63,6 +82,10 @@ print(x(4,5))
 y=lambda a:a**2
 print(y(4))
 
+
+
+
+
 #use of anonymous functions with lambda:
 li = [1,2,3,4,5,6,7,8,9,10] 
 l2= list(filter(lambda x:(x%2 != 0),li)) 
@@ -76,6 +99,10 @@ from functools import reduce
 li = [1,5, 10, 20, 50, 100] 
 sum = reduce((lambda x,y: x+y), li) 
 print (sum)
+
+
+
+
 
 
 
@@ -95,8 +122,16 @@ print(list(result))
 
 
 
+
+
+
+
 r= list(map(lambda x: x if (x!='e' and x!='r') else 'e' if x=='r' else 'r','grrksfoegrrks'))
 print (''.join(r))
+
+
+
+
 
 
 
@@ -109,10 +144,20 @@ y = "'"+ ','.join(map(str, x))  + "'"
 print y
 
 
+
+
+
+
 #fibonacci using lambda
 from functools import reduce
 fib = lambda n: reduce(lambda x,_: x+[x[-1]+x[-2]],range(n-2),[0, 1]) 
 print(fib(7))
+
+
+
+
+
+
 
 
 #squareroot
@@ -125,6 +170,11 @@ for i in range(1,6):
       print pwr
     
    
+
+
+
+
+
 
 #function
 def func1():

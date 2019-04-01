@@ -22,19 +22,3 @@ print(dic)
 
 
 
-li=['n2','n1','n3','n1','n2']
-
-
-#exception handling
-import sys
-randomList = [0, 2]
-for i in randomList:
-    try:
-        print("The entry is", i)
-        r = 1/float(i)
-        break
-    except:
-        print("Oops!",sys.exc_info()[0],"occured.")
-        print("Next entry.")
-        print()
-print("The reciprocal of",i,"is",r)
