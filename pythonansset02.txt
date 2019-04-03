@@ -1,0 +1,66 @@
+1.
+li=[]
+def HCF(x, y):
+    a=0
+    if x > y:
+        s = y
+    else:
+        s = x
+    for i in range(1, s+1):
+        if((x % i == 0) and (y % i == 0)):
+            li.append(i)
+            a=max(li)
+                
+    return a
+x=0
+y=55
+print ("The gcd is",HCF(x,y))
+
+
+o/p:
+[GCC 4.8.2] on linux
+The greatest common factor is :  42
+
+
+
+2.
+def is_power(a,b):
+    d=a/b
+    if(a%b==0 and d%b==0):
+       return True
+    else:
+       return False
+print(is_power(15,15))
+
+
+o/p:
+Python 3.6.1 (default, Dec 2015, 13:05:11)
+[GCC 4.8.2] on linux
+True
+
+
+
+
+3.
+def factr(n):
+    if n>=1:
+        return n*factr(n-1)
+    else:
+        return 1
+   
+def facti(n):
+    f=1
+    if n>=1:
+        for i in range(1,n+1):
+            f=f*i
+        return f
+    else:
+        return 1
+    
+print facti(7)
+print factr(8)
+
+o/p: 
+
+5040
+40320
