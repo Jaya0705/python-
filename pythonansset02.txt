@@ -64,3 +64,204 @@ o/p:
 
 5040
 40320
+
+
+
+
+
+4.
+n=input('enter a bin number')
+temp = n
+s=0
+i=0
+digit=0
+while temp!=0:
+   print temp
+   digit = temp % 10
+   s=s+digit*(2**i)
+   temp = temp//10
+   i=i+1
+print s
+
+
+
+o/p:
+enter a bin number1111
+1111
+111
+11
+1
+15
+
+
+
+
+5.
+
+s=raw_input('enter a string of num n char')
+try:
+   sum=0
+   li=0
+   #li=[x for x in s if i.isdigit()]
+   for i in s:
+      if i.isdigit():
+         sum=sum+int(i)
+      else:
+         raise ValueError
+
+  # for i in li:
+     # sum=sum+int(i)
+   print sum
+   
+except ValueError as e:
+   print('character found')
+
+
+
+
+
+
+6.
+def findAnEven(l):
+    try:
+        for i in l:
+            print i
+            if i%2==0:
+                return i
+                break
+            else:
+                raise ValueError
+    except ValueError:
+        print 'list has no even numbers'
+findAnEven([2,3,4])
+
+
+o/p:
+2
+
+
+
+
+
+7.
+
+def isPalindrome(s):
+    print s[::-1]
+    if s==s[::-1]:
+        print True
+    else:
+        print False
+
+isPalindrome('mada')
+               
+def isPalindrome1(s1):
+    s2=''
+    c=len(s1)-1
+    while c>=0:
+        s2=s2+s1[c]
+        c=c-1
+    print s2
+    if s1==s2:
+        print True
+    else:
+        print False
+isPalindrome('mad')
+
+o/p:
+adam
+False
+dam
+False
+>>> 
+
+
+
+8.
+
+import math
+print eval('1 + 2 * 3')
+print eval('math.sqrt(5)')
+print eval('type(math.pi)')
+
+
+o/p:
+7
+2.2360679775
+<type 'float'>
+
+
+
+
+9.
+a)
+
+
+def nsr():
+  n=int(raw_input())
+  a=n/float(2)
+  print a
+  b=(a+(n/a))/float(2)
+  print b
+  while a!=b:
+      a=b
+      b=(a+(n/a))/float(2)
+  print b
+nsr()
+
+
+o/p:
+5
+2.5
+2.25
+2.2360679775
+
+
+
+
+b)
+l = []
+l1 = []
+def nsr():
+    for n in range(1,10):
+        a=n/float(2)
+        b=(a+(n/a))/float(2)
+        while a!=b:
+            a=b
+            b=(a+(n/a))/float(2)
+        nsr=b
+
+        l.append(nsr)
+nsr()
+
+
+def msr():
+    for n in range(1,10):
+        msr=pow(n,0.5)
+        l1.append(msr)
+    
+msr()
+
+print"----------------------------------------------------------"
+print "Number|","N.Square Root|","\t","M.Square Root|","\t","Difference"
+print"----------------------------------------------------------"
+for i in range(min(len(test),len(test1))):
+    
+    print "   ",i+1,"|\t","%.11f|" %l[i],"\t","%.11f|" %l1[i],"\t",l[i]-l1[i]
+print"----------------------------------------------------------"
+
+
+
+o/p:
+----------------------------------------------------------
+Number| N.Square Root| 	M.Square Root| 	Difference
+----------------------------------------------------------
+    1 |	1.00000000000| 	1.00000000000| 	0.0
+    2 |	1.41421356237| 	1.41421356237| 	-2.22044604925e-16
+    3 |	1.73205080757| 	1.73205080757| 	0.0
+    4 |	2.00000000000| 	2.00000000000| 	0.0
+    5 |	2.23606797750| 	2.23606797750| 	0.0
+    6 |	2.44948974278| 	2.44948974278| 	0.0
+    7 |	2.64575131106| 	2.64575131106| 	0.0
+    8 |	2.82842712475| 	2.82842712475| 	-4.4408920985e-16
+    9 |	3.00000000000| 	3.00000000000| 	0.0
+----------------------------------------------------------
